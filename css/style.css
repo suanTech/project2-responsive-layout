@@ -71,7 +71,7 @@ a:active {
     flex-direction: column;
 }
 .main-nav {
-    margin: 20px 10px 0;
+    margin: 20px 15px 10px;
 }
 .nav {
     margin-top: 20px;
@@ -79,8 +79,8 @@ a:active {
 
 .nav li {
     background-color: white;
-    margin: 3px;
-    padding: 10px;
+    margin: 2.5px 0;
+    padding: 10px 0;
 }
 
 /* ---- Layout Containers ---- */
@@ -94,10 +94,9 @@ header {
     width: 65%;
 }
 
-.main {
-    padding: 40px 15px 50px;
-    margin-bottom: 55px;
-    background-color: white;
+.section {
+    padding: 40px 15px 20px;
+    background-color: rgb(238, 236, 238);
 }
 
 .introduction {
@@ -116,23 +115,46 @@ header {
     flex-wrap: wrap;
 }
 
-.portfolio-image {
+.portfolio-image,
+.skills-image {
     width: 100%;
+    padding:0;
+}
+.portfolio-image { 
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 0;
+}
+
+.skills-image {
+    margin-bottom: 5px;
+}
+
+.skills {
+    background-color: rgb(243, 239, 234);
+}
+
+.skill {
+    padding: 30px 0;
+}
+
+.skill h4 {
+    font-size: 1em;
+}
+
+.skills-image {
+    width: 30%;
 }
 
 .contact {
     padding: 5px 20px 0;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .contact-detail {
     padding: 8px 0;
 }
 
-.second-footer {
+.second-nav {
     display: none;
 }
 
@@ -172,8 +194,12 @@ header {
         padding: 0 250px;
     }
 
+    .nav li {
+        padding: 10px 20px;
+    }
+
     .nav li,
-    .second-footer li {
+    .second-nav li {
         background: none;
     }
 
@@ -196,7 +222,7 @@ header {
         line-height: 1.4em;
     }
 
-    .main {
+    .section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -215,6 +241,10 @@ header {
         margin-bottom: 15px;
     }
 
+    .skill {
+        flex-basis: calc(25% - 10px);
+    }
+
     .description {
         padding: 0 30px;
     }
@@ -230,20 +260,20 @@ header {
     }
 
     .footer {
-        margin: 0 25px 30px;
+        margin: 0 20px 30px;
     }
 
     .to-top {
         display: none;
     }
 
-    .second-footer {
+    .second-nav {
         display: flex;
         flex-direction: row;
         justify-items: center;
     }
 
-    .second-footer li {
+    .second-nav li {
         align-self: center;
         padding-left: 30px;
         margin: 0;
@@ -277,7 +307,7 @@ header {
         font-size: 21px;
     }
 
-    .main {
+    .section {
         padding: 60px 20px 40px;
     }
     .col {
