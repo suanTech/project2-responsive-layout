@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 /* ================================= 
   Base Element Styles
@@ -56,7 +57,11 @@ a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color:rgb(66, 66, 66)
+    color:rgb(66, 66, 66);
+}
+
+a:hover {
+    color:rgb(187, 187, 187);
 }
 
 /* ================================= 
@@ -64,6 +69,11 @@ a:active {
 ==================================== */
 
 /* ---- Navigation ---- */
+
+.name {
+    font-family: 'Limelight', cursive;
+    font-size: 1.5em;
+}
 
 .main-nav,
 .nav {
@@ -74,7 +84,7 @@ a:active {
     margin: 20px 15px 10px;
 }
 .nav {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .nav li {
@@ -108,6 +118,7 @@ header {
     font-size: 15px;
     margin: 15px 10px;
     line-height: normal;
+    min-height: 60px;
 }
 
 .container {
@@ -183,6 +194,10 @@ header {
   Media Queries
 ==================================== */
 @media (min-width: 768px) {
+    .name {
+        font-size: 1.8em;
+    }
+
     .main-nav {
         margin-top: 50px;
         margin-bottom: 20px;
@@ -304,7 +319,6 @@ header {
 
     .introduction {
         margin-right: 30px;
-        font-size: 21px;
     }
 
     .section {
