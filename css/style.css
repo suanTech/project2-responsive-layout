@@ -124,6 +124,7 @@ header {
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio-image,
